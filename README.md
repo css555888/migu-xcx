@@ -12,3 +12,5 @@
 登录页面            login
 授权页面            auth
 结算页面            pay
+
+https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata

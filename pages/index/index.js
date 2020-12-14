@@ -4,14 +4,32 @@ wx-Page({
    * 页面的初始数据
    */
   data: {
-    
+    //轮播图数组
+    swiperList:[]
+
+
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+
+  // 页面刚开始加载就会触发
   onLoad: function (options) {
     
+    // 1.轮播图异步请求  使用promise优化异步请求
+    wx.request({
+      url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata',
+      method: 'GET', 
+      success: (res) =>{
+        this.setData({
+          swiperList:res.data.message
+        })
+      },
+
+    })
+
   },
 
   /**
