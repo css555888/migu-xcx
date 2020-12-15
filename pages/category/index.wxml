@@ -1,2 +1,26 @@
-<!--pages/category/index.wxml-->
-<text>pages/category/index.wxml</text>
+<view class="cates">
+    <Searchinput></Searchinput>
+    <view class="cates_container">
+        <!-- 左侧菜单 -->
+        <scroll-view class="left_menu" scroll-y>
+            <view 
+            class="menu_item"
+            wx:for="{{leftMenuList}}"
+            wx:key="*this"
+            >{{item}}</view>
+        </scroll-view>
+        <!-- 右侧商品内容 -->
+        <scroll-view class="right_content" scroll-y>
+            <view>1</view>
+            <view>2</view>
+            <view>3</view>
+            <view>4</view>
+            <view>5</view>
+            <view>6</view>
+            <view>7</view>
+            <view>8</view>
+            <view>9</view>
+            <view>10</view>
+        </scroll-view>
+    </view>
+</view>

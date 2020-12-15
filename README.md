@@ -14,3 +14,5 @@
 结算页面            pay
 
 https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata
+https://api-hmugo-web.itheima.net/api/public/v1/home/catitems
+https://api-hmugo-web.itheima.net/api/public/v1/home/floordata

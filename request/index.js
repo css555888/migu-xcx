@@ -1,18 +1,15 @@
-export const request=()=>{
+// promise封装异步请求
+export const request=(params)=>{
     return new Promise((resolve,reject)=>{
         wx.request({
-            url: 'https://URL',
-            data: {},
-            method: 'GET', 
-            success: function(res){
-               
+            ...params, 
+            success:(res)=>{
+                resolve(res);
             },
-            fail: function() {
-                
-            },
-            complete: function() {
-                
+            fail:(err)=>{
+                reject(err);
             }
+           
         })
     })
 }
