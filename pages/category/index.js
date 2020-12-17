@@ -7,6 +7,7 @@ Page({
     leftMenuList:[],
     // 右侧商品数据
     rightContent:[],
+    currentIndex:0,
   },
   // 接口的返回数据
   Cates:[],
